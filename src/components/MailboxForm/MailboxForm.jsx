@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const MailboxForm = ({ addBox }) => {
   const [boxOwner, setBoxOwner] = useState('');
-  const [boxSize, setBoxSize] = useState('Small');
+  const [boxSize, setBoxSize] = useState('Small'); //default value
 
   const handleSubmit = (e) => {
     e.preventDefault();

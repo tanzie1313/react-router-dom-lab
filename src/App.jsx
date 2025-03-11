@@ -10,11 +10,11 @@ const App = () => {
 
   const addBox = ({ boxOwner, boxSize }) => {
     const newBox = {
-      _id: mailboxes.length + 1,
+      _id: mailboxes.length + 1,//create id
       boxOwner,
       boxSize,
     };
-    setMailboxes([...mailboxes, newBox]);
+    setMailboxes([...mailboxes, newBox]);//spread operator useState hook
   };
 
   return (
